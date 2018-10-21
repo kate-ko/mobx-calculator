@@ -1,26 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Button from './components/Button';
+import Screen from './components/Screen';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        <div className="calculator">
+          <Screen/>
+
+          <Button class="number" symbol="C" />
+          <Button class="number" symbol="+/-" />
+          <Button class="number" symbol="%" />
+          <Button class="button" symbol="/" />
+
+          <Button class="number" symbol="7" />
+          <Button class="number" symbol="8" />
+          <Button class="number" symbol="9" />
+          <Button class="button" symbol="*" />
+
+
+          <Button class="number" symbol="4" />
+          <Button class="number" symbol="5" />
+          <Button class="number" symbol="6" />
+          <Button class="button" symbol="-"/>
+
+          <Button class="number" symbol="1" />
+          <Button class="number" symbol="2" />
+          <Button class="number" symbol="3" />
+          <Button class="button" symbol="+"/>
+
+          <Button class="number zero" symbol="0" />
+          <Button class="number" symbol="." />
+          <Button class="button" symbol="="/>
+        </div>
+
     );
   }
 }
