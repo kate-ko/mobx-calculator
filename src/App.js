@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Button from './components/Button';
 import Screen from './components/Screen';
+import Result from './components/Result';
 import './App.css';
 
 class App extends Component {
@@ -8,31 +9,33 @@ class App extends Component {
     return (
         <div className="calculator">
           <Screen/>
+          <Result/>
 
-          <Button class="number" symbol="C" />
-          <Button class="number" symbol="+/-" />
-          <Button class="number" symbol="%" />
-          <Button class="button" symbol="/" />
+          <Button class="white" symbol="C" />
+          <Button class="white" symbol="+/-" />
+          <Button class="white" symbol="%" />
+          <Button class="orange" symbol="/" />
 
-          <Button class="number" symbol="7" />
-          <Button class="number" symbol="8" />
-          <Button class="number" symbol="9" />
-          <Button class="button" symbol="*" />
+          <Button class="white" symbol="7" />
+          <Button class="white" symbol="8" />
+          <Button class="white" symbol="9" />
+          <Button class="orange" symbol="*" />
 
 
-          <Button class="number" symbol="4" />
-          <Button class="number" symbol="5" />
-          <Button class="number" symbol="6" />
-          <Button class="button" symbol="-"/>
+          <Button class="white" symbol="4" />
+          <Button class="white" symbol="5" />
+          <Button class="white" symbol="6" />
+          <Button class="orange" symbol="-"/>
 
-          <Button class="number" symbol="1" />
-          <Button class="number" symbol="2" />
-          <Button class="number" symbol="3" />
-          <Button class="button" symbol="+"/>
+          <Button class="white" symbol="1" />
+          <Button class="white" symbol="2" />
+          <Button class="white" symbol="3" />
+          <Button class="orange" symbol="+"/>
 
-          <Button class="number zero" symbol="0" />
-          <Button class="number" symbol="." />
-          <Button class="button" symbol="="/>
+          <Button class="white zero" symbol="0" />
+          <Button class="white" symbol="." />
+          <Button class="orange" symbol="="/>
+
         </div>
 
     );

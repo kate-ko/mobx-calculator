@@ -5,12 +5,12 @@ import '../App.css';
 @inject("store")
 
 @observer
-class Screen extends Component {
+class Result extends Component {
   render() {
     return (
-          <div className="screen"> {this.props.store.screen} </div>
+          <div className="result"> {this.props.store.result} </div>
     );
   }
 }
 
-export default Screen;
+export default Result;
