@@ -10,7 +10,7 @@ class CalculatorStore {
   currentSymbol = "" // last entered symbol
   zeroFlag = 0; // if number starts with zero
   onlyNumberFlag = 1; // don't show result if it's only one number
-  maxNum = 17; // maximum number of digits on the screen
+  maxNum = 20; // maximum number of digits on the screen
   minusFlag = -1; // if '+/-' button was clicked index of "minus", not clicked '-1'
 
   @action clickButton = (value) => {
@@ -109,6 +109,7 @@ class CalculatorStore {
 
   evalScreen() {
     let screen = (this.eval(this.screen)).toString();
+    console.log(screen)
     return screen.length <= this.maxNum ? screen : "Number too big";
   }
 
